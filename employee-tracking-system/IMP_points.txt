@@ -1,0 +1,28 @@
+
+****** Session in quarkus reactive*********
+Why Sessions:
+
+Grouping Operations:
+
+Think of a session like a container for multiple actions you want to perform on a database. It helps group these actions together.
+Safety Net:
+
+Imagine you're doing several things at once (like updating different parts of a database). A session acts like a safety net. If anything goes wrong with any of those things, you can "undo" everything and keep the database in a safe state.
+Avoiding Chaos:
+
+It's like cooking a complicated dish. You prepare all the ingredients, cook them together, and if something burns or goes wrong, you don't serve the dish. The same idea applies to database actions within a session.
+Why in a Reactive Environment (Mutiny):
+
+Reactive Nature:
+
+In a reactive world, where things happen in a non-blocking way, sessions help you manage multiple actions happening at the same time.
+Error Handling:
+
+Sessions help you deal with problems smoothly. If anything fails during your planned actions (like saving data), the session helps you handle those errors in a neat way.
+Efficient Resource Use:
+
+Imagine you're borrowing tools to fix something. A session helps you "borrow" and "return" resources (like a database connection) efficiently, without wasting them.
+Keeping Things in Order:
+
+When different parts of your program want to talk to the database, sessions help ensure that everyone takes turns and doesn't create chaos.
+So, in simple terms, sessions are like containers for database actions. They keep things organized, safe, and manageable, especially in the fast-paced world of reactive programming using Mutiny.

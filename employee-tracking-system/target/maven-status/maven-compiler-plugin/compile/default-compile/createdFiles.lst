@@ -1,0 +1,3 @@
+org\emp\employeeResource\EmployeeResource.class
+org\emp\entity\Employee.class
+META-INF\panache-archive.marker
